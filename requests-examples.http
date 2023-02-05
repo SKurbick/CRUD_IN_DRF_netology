@@ -47,18 +47,14 @@ POST {{baseUrl}}/stocks/
 Content-Type: application/json
 
 {
-  "address":  "мой адрес не дом и не улица, мой адрес сегодня такой: www.ленинград-спб.ru3",
+  "address":  "тестовый склад",
   "positions": [
     {
-      "product": 2,
-      "quantity": 250,
-      "price": 120.50
-    },
-    {
-      "product": 3,
-      "quantity": 100,
-      "price": 180
+      "product": 1,
+      "quantity": 222,
+      "price": 65.30
     }
+
   ]
 }
 
@@ -91,7 +87,9 @@ Content-Type: application/json
 
 
 ###
+
 GET {{baseUrl}}/stocks/
+
 ###
-GET {{baseUrl}}/stocks/?search=помид
+GET {{baseUrl}}/stocks/?search=баклажан
 Content-Type: application/json
